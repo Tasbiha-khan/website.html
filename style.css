@@ -358,7 +358,6 @@ h1 {
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: gray;
 }
 .leftside{
     width: 50%;
@@ -442,18 +441,21 @@ h1 {
         background-repeat: no-repeat;
     }
     .contact{
-        width: 100%;
         flex-direction: column;
+    }
+     .detail{
+        height: max-content;
+         flex-direction: column;
     }
     .leftside{
         width: 100%;
+        align-items:center;
+        justify-content: center;
     }
     .rightside{
         width: 100%;
-    }
-    .detail{
-        height: max-content;
-         flex-direction: column;
+        align-items:center;
+        justify-content: center;
     }
     .footer{
         height: max-content;
