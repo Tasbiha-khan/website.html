@@ -436,6 +436,9 @@ h1 {
         font-weight: 800;
         transform: rotate(90deg);
     }
+    .herosection{
+        background-size: contain;
+    }
     .contact{
         flex-direction: column;
     }
@@ -443,6 +446,19 @@ h1 {
         width: 100%;
     }
     .right{
-        display: none;
+        display: block;
     }
-}
+    .footer{
+        height: max-content;
+        flex-direction: column;
+    }
+    .signup{
+        height: max-content;
+        flex-direction: column;
+    }
+    .detail{
+        height: max-content;
+         flex-direction: column;
+    }
+
+    
