@@ -44,6 +44,7 @@
     background-image: linear-gradient(to bottom, rgba(31, 34, 31, 0.137)), url(assests/hero.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -441,6 +442,7 @@ h1 {
         background-repeat: no-repeat;
     }
     .contact{
+        width: 100%;
         flex-direction: column;
     }
     .leftside{
@@ -449,6 +451,10 @@ h1 {
     .rightside{
         width: 100%;
     }
+    .detail{
+        height: max-content;
+         flex-direction: column;
+    }
     .footer{
         height: max-content;
         flex-direction: column;
@@ -456,10 +462,6 @@ h1 {
     .signup{
         height: max-content;
         flex-direction: column;
-    }
-    .detail{
-        height: max-content;
-         flex-direction: column;
     }
 }
 
