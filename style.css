@@ -1,0 +1,448 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 40px;
+    background-color: #6B705C;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    transition: 0.5s ease;
+    z-index: 1;
+}
+
+.navbar a:hover {
+    color: #3B2F2F;
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #FFF6E5;
+    font-family: fantasy;
+    font-size: medium;
+}
+
+.menu {
+    display: none;
+}
+
+.herosection {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(31, 34, 31, 0.137)), url(assests/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 0px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin: 15px;
+}
+
+.parentofcards {
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    height: max-content;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 200;
+    color: black;
+}
+
+.card p {
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    color: black;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.btngroup button {
+    padding: 6px, 12px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 80px;
+    background-color: #3B2F2F;
+    padding: 10px 8px;
+    color: white;
+}
+
+.btngroup {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #6B705C;
+    display: flex;
+    padding: 40px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.footer div {
+    width: 35%;
+    height: max-content;
+    flex-direction: column;
+}
+
+.footer div ul li {
+    list-style-type: none;
+    font-size: 15px;
+    gap: 10px;
+}
+.footer div ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.footer h5{
+    font-style: oblique;
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+.signup{
+    width: 100%;
+    height: max-content;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email{
+    width: 60%;
+    height: 50px;
+    padding: 12px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter{
+    width: 30%;
+    height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 20px;
+}
+.email input{
+    width: 40%;
+    height: 40px;
+    padding: 2px 2px;
+    border: 1px solid white;
+    transition: 0.5s ease;
+}
+.email button{
+     width: 30%;
+    background-color: black;
+    color: white;
+    font-size: small;
+    padding: 6px 8px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: normal;
+}
+.email button:hover{
+    background-color:#3B2F2F ;
+}
+
+/* Home page done */
+.contact {
+    width: 100%;
+    height: 100vh;
+     background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+.left input {
+    background-color: transparent;
+    padding: 10px 12px;
+    width: 50%;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.left h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+}
+
+.left p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+}
+
+.left textarea {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 12px;
+}
+
+.left .btn {
+    width: 30%;
+    background-color: black;
+    color: white;
+    font-size: small;
+    padding: 6px 8px;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-weight: normal;
+    transition: 0.5s ease;
+}
+.left .btn:hover{
+    background-color: #3B2F2F;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    padding: 6px 12px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: initial;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+}
+
+.right p {
+    font-size: small;
+    font-weight: 80;
+    text-align: left;
+    color: black;
+}
+
+/* contact page end */
+.aboutus {
+    width: 100%;
+    height: max-content;
+    background-color: #ededed;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+
+
+}
+
+.aboutus h4 {
+    font-family: monospace;
+    font-style: oblique;
+    font-weight: 900;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.aboutus p {
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: 200;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+    gap: 15px;
+    word-spacing: 3px;
+    line-height: 1;
+
+}
+
+.aboutus span {
+    font-style: italic;
+    font-size: 16px;
+    text-align: left;
+    color: black;
+    word-spacing: 1px;
+    margin: 15px;
+}
+/* about page end */
+.detail{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: gray;
+}
+.left{
+    width: 50%;
+    height: 100%;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10px;
+    gap: 40px;
+}
+.right ul{
+    list-style-type: none;
+}
+.left .imgbox{
+    width: 50%;
+    height: 50%;
+}
+.imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid black;
+}
+.qty span{
+    background-color:transparent;
+    color: black;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.5s ease;
+}
+.qty input{
+    width: 50px;
+    padding:6px 12px ;
+}
+.right button{
+    padding: 6px 12px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.right button:hover{
+    background-color: #3B2F2F;
+    color: white;
+}
+.qty span:hover{
+    background-color: #3B2F2F;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:786px) {
+    .links {
+        display: none;
+    }
+    .nav-icon{
+        display: none;
+    }
+    .menu {
+        display: block;
+        font-size: xx-large;
+        font-weight: 800;
+        transform: rotate(90deg);
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        display: none;
+    }
+}
