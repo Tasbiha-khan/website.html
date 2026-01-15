@@ -438,15 +438,16 @@ h1 {
     }
     .herosection{
         background-size: contain;
+        background-repeat: no-repeat;
     }
     .contact{
         flex-direction: column;
     }
-    .left{
+    .leftside{
         width: 100%;
     }
-    .right{
-        display: block;
+    .rightside{
+        width: 100%;
     }
     .footer{
         height: max-content;
