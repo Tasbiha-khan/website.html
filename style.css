@@ -469,7 +469,12 @@ h1 {
     }
     .email{
         flex-direction: column;
-        
+    }
+    .email input{
+        width: max-content;
+    }
+    .email button{
+        width: max-content;
     }
 }
 
