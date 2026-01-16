@@ -290,6 +290,8 @@ h1 {
     padding: 6px 12px;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .right h4 {
@@ -465,11 +467,9 @@ h1 {
     .signup{
         height: max-content;
     }
-    .newsletter input{
-        flex-direction: row;
-    }
-    .newsletter button{
-        flex-direction: row;
+    .email{
+        flex-direction: column;
+        
     }
 }
 
