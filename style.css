@@ -378,6 +378,8 @@ h1 {
 .leftside .imgbox{
     width: 50%;
     height: 50%;
+    align-items: center;
+    justify-content: center;
 }
 .imgbox img{
     width: 100%;
@@ -461,13 +463,12 @@ h1 {
     }
     .signup{
         height: max-content;
-        flex-direction: column;
     }
     .newsletter input{
-        flex-direction: column;
+        flex-direction: row;
     }
     .newsletter button{
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
