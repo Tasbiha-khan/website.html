@@ -463,6 +463,12 @@ h1 {
         height: max-content;
         flex-direction: column;
     }
+    .newsletter input{
+        flex-direction: column;
+    }
+    .newsletter button{
+        flex-direction: column;
+    }
 }
 
     
