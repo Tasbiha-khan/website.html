@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-   integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-   crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
+    integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
   <div class="navbar">
     <div class="nav-logo">
-      <a href=""><img src="assests/Gemini_Generated_Image_1fspq91fspq91fsp.png" height="30px"></a>
+      <a href=""><img src="Gemini_Generated_Image_1fspq91fspq91fsp.png" height="30px"></a>
     </div>
-    <div class="links" id="mylinks">
+    <div class="links">
       <a href="index.html">HOME</a>
       <a href="About.html">ABOUT</a>
       <a href="Product.html">PRODUCT</a>
       <a href="Contact.html">CONTACT</a>
     </div>
-    <div class="navmenu" id="menu"  onclick="toggleMenu()">|||</div>
+    <div class="menu">|||</div>
     <div class="nav-icon">
       <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
       <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
     </div>
   </div>
-
+    
    <div class="detail">
-    <div class="leftside">
+    <div class="left">
       <div class="imgbox">
         <img src="assests/handbag.webp">
       </div>
     </div>
-    <div class="rightside">
+    <div class="right">
       <h1>Women Handbag</h1>
       <p>The Women Hand Bag comes in Black is perfect for both indoor and outdoor fashion. With a width of 32 cm and a
          height of 24 cm, this bag is ideal for casual wear.</p>
@@ -115,10 +114,21 @@
 
 </body>
 <script>
-  function toggleMenu() {
-    document.getElementById("mylinks").classList.toggle("active");
+  function sub(){
+   var num= document.getElementById("num")
+   if(num.value==1){
+      alert("At least buy one product")
+   }else{
+    num.value--
+   }
+  }
+  function add(){
+    var num= document.getElementById("num")
+    if(num.value>=10){
+      alert("we only have 10 peices in stock")
+    }else{
+      num.value++
+    }
   }
 </script>
-
-
 </html>

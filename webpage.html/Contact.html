@@ -1,58 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-   integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-   crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="navbar">
     <div class="nav-logo">
-      <a href=""><img src="assests/Gemini_Generated_Image_1fspq91fspq91fsp.png" height="30px"></a>
+      <a href=""><img src="Gemini_Generated_Image_1fspq91fspq91fsp.png" height="30px"></a>
     </div>
-    <div class="links" id="mylinks">
+    <div class="links">
       <a href="index.html">HOME</a>
       <a href="About.html">ABOUT</a>
       <a href="Product.html">PRODUCT</a>
       <a href="Contact.html">CONTACT</a>
     </div>
-    <div class="navmenu" id="menu"  onclick="toggleMenu()">|||</div>
+    <div class="menu">|||</div>
     <div class="nav-icon">
       <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
       <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
     </div>
   </div>
+  
+  <!-- nav end content start -->
+  <div class="contact">
+    <div class="left">
+      <h2>Drop Us A Line</h2>
+      <p>We’re happy to answer any questions you have or provide you with an estimate. Just send us a message in the
+        form below with any questions you may have.</p>
+      <input type="text" placeholder="Enter Your Name" required pattern="[a-zA-z],{3-15}"
+        title="Fill it according to format">
+      <input type="number" placeholder="Enter Your Number" required pattern="[-0+10],{11-12}"
+        title="Fill it accordingto format e.g:0334589026">
+      <input type="email" placeholder="Enter Your Email" required pattern="[a-z0-8],{5-10}"
+        title="Fill it accordingto format e.g:abc26@gmail.com">
+      <input type="text" placeholder="subject" required>
+      <textarea id="comments" rows="10" cols="40" placeholder="Your Message"></textarea>
+    <input type="submit" placeholder="Send Message" class="btn">
+    </div>
+    <div class="right">
+      <h4>Opening Hours</h4>
+      <p>Mon-fri:10:00 AM to 10:00 PM </p>
+      <p>Saturday:10:00 AM to 11:00 PM</p>
 
-   <div class="detail">
-    <div class="leftside">
-      <div class="imgbox">
-        <img src="assests/handbag.webp">
-      </div>
+      <p><i class="fa-solid fa-location-dot" style="color: #000000;"></i>Plot 172x PECHS Block II, Main Tariq Road
+        Karachi.</p>
+      <p><i class="fa-solid fa-phone" style="color: #000000;"></i>Call Us: 03162672929|03361211483</p>
+      <p><i class="fa-regular fa-envelope" style="color: #000000;"></i>estoregrace&gable@gmail.com</p>
+
+      <p><i class="fa-brands fa-facebook" style="color: #000000;"></i>
+      <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+      <i class="fa-brands fa-twitter" style="color: #000000;"></i>
+    </p>
     </div>
-    <div class="rightside">
-      <h1>Women Handbag</h1>
-      <p>The Women Hand Bag comes in Black is perfect for both indoor and outdoor fashion. With a width of 32 cm and a
-         height of 24 cm, this bag is ideal for casual wear.</p>
-         <h2>₨. 10,350</h2>
-         <ul>
-          <li>Crafted for Everyday Luxury</li>
-          <li>Designed for the Modern Woman</li>
-          <li>Sophisticated & Versatile Designs</li>
-          <li>Premium Quality Materials</li>
-         </ul>
-         <div class="qty">
-          <span onclick="sub()">-</span>
-          <input type="number" value="1" id="num"> 
-          <span onclick="add()">+</span> <br><br>
-          <button>Buy Now</button>
-         </div>
-    </div>
-   </div>
+  </div>
+  <!-- Content End -->
    <div class="signup">
     <div class="content">
       <div class="email">
@@ -112,13 +121,7 @@
       </ul>
     </div>
   </div>
-
+  
 </body>
-<script>
-  function toggleMenu() {
-    document.getElementById("mylinks").classList.toggle("active");
-  }
-</script>
-
 
 </html>

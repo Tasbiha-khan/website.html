@@ -34,7 +34,7 @@
     font-size: medium;
 }
 
-.navmenu {
+.menu {
     display: none;
 }
 
@@ -44,7 +44,6 @@
     background-image: linear-gradient(to bottom, rgba(31, 34, 31, 0.137)), url(assests/hero.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 h1 {
@@ -157,7 +156,8 @@ h1 {
 .footer h5{
     font-style: oblique;
     font-size: 20px;
-    margin-bottom: 15px;   
+    margin-bottom: 15px;
+    
 }
 .signup{
     width: 100%;
@@ -206,9 +206,6 @@ h1 {
     border: 1px solid black;
     cursor: pointer;
     font-weight: normal;
-}
-.email button:hover{
-    background-color:#3B2F2F ;
 }
 
 /* Home page done */
@@ -289,8 +286,6 @@ h1 {
     padding: 6px 12px;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
-    justify-content: center;
 }
 
 .right h4 {
@@ -318,6 +313,8 @@ h1 {
     align-items: center;
     flex-direction: column;
     padding: 30px;
+
+
 }
 
 .aboutus h4 {
@@ -357,15 +354,13 @@ h1 {
     width: 100%;
     height: 100vh;
     display: flex;
+    background-color: gray;
 }
-.leftside{
+.left{
     width: 50%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.rightside{
+.right{
     width: 50%;
     height: 100%;
     display: flex;
@@ -374,10 +369,10 @@ h1 {
     padding: 0px 10px;
     gap: 40px;
 }
-.rightside ul{
+.right ul{
     list-style-type: none;
 }
-.leftside .imgbox{
+.left .imgbox{
     width: 50%;
     height: 50%;
 }
@@ -400,7 +395,7 @@ h1 {
     width: 50px;
     padding:6px 12px ;
 }
-.rightside button{
+.right button{
     padding: 6px 12px;
     background-color: transparent;
     border-radius: 40px;
@@ -408,15 +403,14 @@ h1 {
     transition: 0.5s ease;
     cursor: pointer;
 }
-.rightside button:hover{
+.right button:hover{
     background-color: #3B2F2F;
     color: white;
 }
 .qty span:hover{
     background-color: #3B2F2F;
-    color: black;
+    color: white;
 }
-/* detail page complete */
 
 
 
@@ -425,77 +419,27 @@ h1 {
 
 
 
-@media screen and (max-width:992px) {
+
+@media screen and (max-width:786px) {
     .links {
         display: none;
-        flex-direction: column;
-        background: #0c2e4d;
-        /* color: black; */
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        padding: 20px;
-    }
-    .links a{
-        color: black;
-        font-size: 25px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .nav-icon{
         display: none;
     }
-    .navmenu {
+    .menu {
         display: block;
         font-size: xx-large;
         font-weight: 800;
         transform: rotate(90deg);
     }
-     .active{
-        display: flex;
-        background-color:#6B705C;
-        text-align: center;
-        flex-direction: column;
-        position: absolute;
-        top: 15px;
-        width: 100%;
-    }
-
-    .herosection{
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
     .contact{
         flex-direction: column;
     }
-     .detail{
-        height: max-content;
-         flex-direction: column;
-         align-items:center;
-        justify-content: center;
-    }
-    .leftside{
+    .left{
         width: 100%;
     }
-    .rightside{
-        width: 100%;
-    }
-    .footer{
-        height: max-content;
-        flex-direction: column;
-    }
-    .signup{
-        height: max-content;
-    }
-    .email{
-        flex-direction: column;
-    }
-    .email input{
-        width: max-content;
-    }
-    .email button{
-        width: max-content;
+    .right{
+        display: none;
     }
 }
-
-    

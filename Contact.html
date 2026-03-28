@@ -16,19 +16,19 @@
     <div class="nav-logo">
       <a href=""><img src="assests/Gemini_Generated_Image_1fspq91fspq91fsp.png" height="30px"></a>
     </div>
-    <div class="links">
+    <div class="links" id="mylinks">
       <a href="index.html">HOME</a>
       <a href="About.html">ABOUT</a>
       <a href="Product.html">PRODUCT</a>
       <a href="Contact.html">CONTACT</a>
     </div>
-    <div class="menu">|||</div>
+    <div class="navmenu" id="menu"  onclick="toggleMenu()">|||</div>
     <div class="nav-icon">
       <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
       <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
     </div>
   </div>
-  
+
   <!-- nav end content start -->
   <div class="contact">
     <div class="left">
@@ -123,5 +123,11 @@
   </div>
   
 </body>
+<script>
+  function toggleMenu() {
+    document.getElementById("mylinks").classList.toggle("active");
+  }
+</script>
+
 
 </html>
